@@ -53,6 +53,8 @@ io.on("connection", socket => {
             sendedAt: horario
         };
 
+        console.log(message);
+
         messages.push(message);
 
         io.to(data.sala).emit("construct message", {

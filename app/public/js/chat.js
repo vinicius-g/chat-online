@@ -1,4 +1,4 @@
-const socket = io("http://192.168.43.58:2405/");
+const socket = io("http://192.168.187.58:2405/");
 
 const urlSearch = new URLSearchParams(window.location.search);
 const sala = urlSearch.get("sala");
@@ -95,5 +95,6 @@ messageInput.addEventListener("keypress", (e) => {
 })
 
 logOutButton.addEventListener("click", () => {
-    window.location.href = "http://192.168.18.9:2405";
+    const homeLink = window.location.origin;
+    window.location.href = homeLink;
 })
