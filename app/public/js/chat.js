@@ -1,4 +1,4 @@
-const socket = io("http://192.168.187.58:2405/");
+const socket = io("http://192.168.158.58:2405/");
 
 const urlSearch = new URLSearchParams(window.location.search);
 const sala = urlSearch.get("sala");
